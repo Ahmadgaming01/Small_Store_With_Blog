@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+<!-- Start Blog Section -->
+
+<div class="container">
+
+    <div class="row">
+
+
+
+
+
+
+        <div class="col-12  my-5 ">
+            <div class="post-entry">
+                <a href="#" class="post-thumbnail">
+                    <div class="img-fluid text-center">
+                        <img src="{{object.image.url}}" alt="Image" class="img-fluid  ">
+                    </div>
+                </a>
+                <div class="post-content-entry text-start ">
+                    <h3><a href="#">{{object.title}}</a></h3>
+
+                    <div>
+                        <p> {{object.content}} </p>
+                    </div>
+
+
+                    <div class="meta">
+                        <span>by <a href="#">{{object.author}}</a></span> <span>on <a
+                                href="#">{{object.publish_date}}</a></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- End Blog Section -->
+
+
+\
+
+{% endblock body %}
