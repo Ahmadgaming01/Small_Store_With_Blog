@@ -7,3 +7,4 @@ def get_random_post(request):
     data = Post.objects.filter()[:3]
     context = {'data':data}
     return render(request , 'settings/home.html' ,context)
+

@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import get_random_post
-
+from .views import get_random_post , about_us , contact_us
+app_name = 'settings'
 urlpatterns = [
-    path('home/' , get_random_post)
+    path('home/' , get_random_post , name = 'home_page'),
+
+
 ]
