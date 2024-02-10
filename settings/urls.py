@@ -4,5 +4,6 @@ app_name = 'settings'
 urlpatterns = [
     path('home/' , get_random_post , name = 'home_page'),
     path('contact_us/' , contact_us , name = 'contact_us'),
-    
+    path('about_us/' , about_us , name = 'about_us')
+
 ]

@@ -14,3 +14,6 @@ def contact_us(request):
     return  render(request,'settings/contact.html' ,{})
 
 
+def about_us(request):
+    
+    return  render(request, "settings/about.html" , {})
