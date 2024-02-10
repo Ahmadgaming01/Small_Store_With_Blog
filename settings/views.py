@@ -8,3 +8,9 @@ def get_random_post(request):
     context = {'data':data}
     return render(request , 'settings/home.html' ,context)
 
+
+def contact_us(request):
+    
+    return  render(request,'settings/contact.html' ,{})
+
+
