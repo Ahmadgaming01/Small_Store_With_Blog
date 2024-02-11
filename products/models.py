@@ -11,12 +11,13 @@ class Product(models.Model):
     image = models.ImageField(upload_to= 'images')
     price = models.FloatField(default = 0)
     created_date = models.DateTimeField(default=timezone.now)
+    brand = models.ForeignKey('Brand' , related_name = 'product_brand',on_delete=models.CASCADE)
     user = models.ForeignKey(User , related_name = 'product_user' , on_delete = models.Case)
     def __str__(self):
-        self.name 
+        return self.name 
 
 class Brand(models.Model):
-    product = models.ForeignKey(Product , related_name = 'brand_product',on_delete=models.CASCADE)
+    
     name = models.CharField(max_length=50)
     image = models.ImageField(upload_to= 'brands')
     def __str__(self):

@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     "blogs",
     "taggit",
     "settings",
-    "Products",
-    
+    "products",
+
     
 ]
 
